@@ -14,9 +14,7 @@ pipelines:
             - BUNDLE="kaniko-ib"
             - DATE=`date '+%Y%m%d-%H%M'`
             - git submodule update --init --recursive
-            - cd $BUNDLE
             - git bundle create --progress ../$BUNDLE_$DATE.bundle --all
-            - cd ..       
             - ls -alht *
             - |
               curl -X POST \

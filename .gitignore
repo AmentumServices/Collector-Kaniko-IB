@@ -4,6 +4,7 @@
 # Ignore subdirectories
 */
 !kaniko-ib/
+!.github/*
 
 # Ignore Files
 *.tgz
